@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import Sidebar from "../components/Sidebar";
+import React from "react";
+import Sidebar from "../../components/Sidebar";
 import "./dashboard.css";
-import Chart from "../components/Chart";
-import Stats from "../components/Stats";
-import UserChart from "../components/UserChart";
+import Chart from "../../components/Chart";
+import Stats from "../../components/Stats";
+import UserChart from "../../components/UserChart";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { ImUsers } from "react-icons/im";
 import { BiMoney } from "react-icons/bi";
@@ -20,7 +20,9 @@ const Dashboard = () => {
             <li>
               <Sidebar />
             </li>
-            <li className="heading">INFOCMR</li>
+            <li className="heading">
+              INFOCMR <span className="text-danger">DASHBOARD</span>
+            </li>
           </ul>
           <ul>
             <li className="notification">
