@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiMenuAlt1 } from "react-icons/hi";
-import { AiFillThunderbolt } from "react-icons/ai";
+import { MdDashboard, MdWork } from "react-icons/md";
+import { ImUsers } from "react-icons/im";
+import { RiAdvertisementFill } from "react-icons/ri";
+import { BiMoney } from "react-icons/bi";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -37,31 +40,31 @@ const Sidebar = () => {
           <div className="sidebar-body">
             <li>
               <span className="icon">
-                <AiFillThunderbolt size={20} />
+                <MdDashboard size={25} />
               </span>
               <Link to="/dashboard">DASHBOARD</Link>
             </li>
             <li>
               <span className="icon">
-                <AiFillThunderbolt size={20} />
+                <ImUsers size={25} />
               </span>
               <Link to="/users">USERS</Link>
             </li>
             <li>
               <span className="icon">
-                <AiFillThunderbolt size={20} />
+                <MdWork size={25} />
               </span>
               <Link to="/institutions">INSTITUTIONS</Link>
             </li>
             <li>
               <span className="icon">
-                <AiFillThunderbolt size={20} />
+                <RiAdvertisementFill size={25} />
               </span>
               <Link to="/ads">ADVERTS</Link>
             </li>
             <li>
               <span className="icon">
-                <AiFillThunderbolt size={20} />
+                <BiMoney size={25} />
               </span>
               <Link to="/income">INCOME</Link>
             </li>
