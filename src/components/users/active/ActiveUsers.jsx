@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import UserModal from "../../modal/UserModal";
+import "./ActiveUsers.css";
 
 const ActiveUsers = () => {
+  const [activeUsers] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  const [userDetails, setUserDetails] = useState(false);
+
   return (
     <div>
       <div className="search">
@@ -12,248 +17,21 @@ const ActiveUsers = () => {
             <th scope="col">Name</th>
             <th scope="col">Phone</th>
             <th scope="col">Email</th>
-            <th scope="col">Action</th>
+            <th scope="col">Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Larry the Bird</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Larry the Bird</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Larry the Bird</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Larry the Bird</td>
-            <td>test@gmail.com</td>
-            <td>
-              <div className="mybtn">
-                <button className="btn btn-outline-danger btn-sm">
-                  Suspend
-                </button>
-              </div>
-            </td>
-          </tr>
+          {activeUsers.map((_, index) => (
+            <tr key={index} onClick={() => setUserDetails(true)}>
+              <td>Mark Jordan</td>
+              <td>+237 672491296</td>
+              <td>infocmrtest@gmail.com</td>
+              <td className="text-success">Active</td>
+            </tr>
+          ))}
         </tbody>
       </table>
+      <UserModal show={userDetails} onHide={() => setUserDetails(false)} />
     </div>
   );
 };

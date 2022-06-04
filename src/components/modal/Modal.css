@@ -1,0 +1,41 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .card {
+    width: 49%;
+}
+
+.ads-number {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+}
+
+.ads-performance-header {
+    font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+}
+
+.details-header {
+    font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+}
+
+.details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.details-key {
+    font-weight: bold;
+}
+
+.danger-zone {
+    font-size: 10px;
+}

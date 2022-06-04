@@ -6,3 +6,7 @@
     width: 30%;
     float: right;
 }
+
+table tbody tr:hover {
+    cursor: pointer;
+}
