@@ -32,7 +32,7 @@ class App extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="650"
+              width="100%"
               height="500"
             />
           </div>

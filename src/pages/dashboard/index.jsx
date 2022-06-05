@@ -105,7 +105,7 @@ const Dashboard = () => {
         <div className="charts">
           <div className="income-chart">
             <div className="card">
-              <div className="card-body">
+              <div className={`card-body charts-wrapper`}>
                 <div className="chart-one">
                   <Chart />
                 </div>

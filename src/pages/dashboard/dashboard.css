@@ -79,7 +79,16 @@
     width: 38%;
 }
 
+.charts-wrapper {
+    width: 100%;
+}
+
+.chart-one {
+    width: 60%;
+}
+
 .chart-two {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
