@@ -1,0 +1,96 @@
+.wrapper {
+    background-color: whitesmoke;
+
+}
+
+.auth-card {
+    width: 350px;
+    margin: auto;
+
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 40%;
+}
+
+.input {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.input input {
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 5px;
+    border: 1px solid rgb(197, 196, 196);
+    background-color: rgb(245, 245, 245);
+    outline: none;
+    border-radius: 2px;
+}
+
+.login-btn {
+    margin-top: 10px;
+}
+
+.login-btn button {
+    border: none;
+    width: 90%;
+    background-color: rgb(62, 62, 224);
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    padding: 2px 0;
+}
+
+.or {
+    margin-top: 15px;
+}
+
+.options .facebook {
+    margin-top: 20px;
+}
+
+.options .facebook a {
+    color: darkblue;
+    font-size: 15px;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.signup-card {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.signup-card p a {
+    text-decoration: none;
+}
+
+.get-app {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.get-app p {
+    font-size: 13px;
+}
+
+.get-app-link img {
+    width: 30%;
+}
