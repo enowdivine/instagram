@@ -1,8 +1,8 @@
 import React from "react";
-import "./Auth.css";
+import "./Login.css";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ signup }) => {
   return (
     <div className="wrapper">
       <div className="card auth-card">
@@ -29,13 +29,16 @@ const Login = () => {
           </div>
           <div className="options">
             <div className="facebook">
-              <a href="#">Log in with Facebook</a>
+              <a href="#">
+                <img src="/images/facebook-logo.png" alt="" /> Log in with
+                Facebook
+              </a>
             </div>
-            <Link to="/forgot-password">Forgot password?</Link>
+            <Link to="/forgotPassword">Forgot password?</Link>
           </div>
         </div>
       </div>
-      <div className="card signup-card">
+      <div className="card signup-card mt-2">
         <div className="card-body">
           <p>
             Don't have an account? <Link to="/signup">Sign up</Link>

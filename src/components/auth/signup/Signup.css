@@ -23,6 +23,35 @@
     margin-bottom: 5px;
 }
 
+.facebook-signup {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.facebook-signup button {
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 00;
+}
+
+.facebook-signup button img {
+    width: 25px;
+    margin: 0 0 2px 0;
+}
+
+.facebook-signup h3 {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    color: grey;
+}
+
 form {
     margin-top: 30px;
 }
@@ -37,6 +66,19 @@ form {
     border-radius: 2px;
 }
 
+.info-text {
+    width: 90%;
+    margin: auto;
+    font-size: 13px;
+    color: grey;
+}
+
+.info-text p a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
 .login-btn {
     margin-top: 10px;
 }
@@ -44,41 +86,22 @@ form {
 .login-btn button {
     border: none;
     width: 90%;
-    background-color: rgb(62, 62, 224);
+    background-color: #0095f6;
     border-radius: 2px;
     color: white;
     font-weight: bold;
     padding: 2px 0;
 }
 
-.or {
-    margin-top: 15px;
-}
-
-.options .facebook {
-    margin-top: 20px;
-}
-
-.options .facebook a {
-    color: darkblue;
-    font-size: 15px;
-}
-
-.options a {
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-}
-
 .signup-card {
     width: 350px;
     margin: auto;
-    margin-top: 10px;
     font-size: 15px;
 }
 
 .signup-card p a {
     text-decoration: none;
+    color: #0095f6;
 }
 
 .get-app {

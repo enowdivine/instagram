@@ -1,14 +1,14 @@
 import React from "react";
-import Login from "../components/auth/login/Login";
+import Signup from "../components/auth/signup/Signup";
 import Footer from "../components/shared/Footer";
 import "./Index.css";
 
-const Index = () => {
+const signup = () => {
   return (
     <div className="main">
       <div className="content">
         <div>
-          <Login />
+          <Signup />
         </div>
         <div>
           <Footer />
@@ -18,4 +18,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default signup;

@@ -1,21 +1,21 @@
 import React from "react";
-import Login from "../components/auth/login/Login";
+import ForgotPassword from "../components/auth/forgotpassword/ForgotPassword";
 import Footer from "../components/shared/Footer";
 import "./Index.css";
 
-const Index = () => {
+const Password = () => {
   return (
     <div className="main">
       <div className="content">
         <div>
-          <Login />
+          <ForgotPassword />
         </div>
-        <div>
-          <Footer />
-        </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
 };
 
-export default Index;
+export default Password;
