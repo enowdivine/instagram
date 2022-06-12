@@ -1,7 +1,10 @@
 import React from "react";
-import { BsThreeDots, BsChat, BsBookmark } from "react-icons/bs";
+import "./Post.css";
+import { BsThreeDots, BsEmojiSmile } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FaRegPaperPlane } from "react-icons/fa";
+import { RiChat3Line } from "react-icons/ri";
+import { BiBookmark } from "react-icons/bi";
 
 const Post = () => {
   return (
@@ -24,30 +27,47 @@ const Post = () => {
           </div>
           <div className="actions">
             <div className="action">
-              <AiOutlineHeart />
-              <BsChat />
-              <FaRegPaperPlane />
+              <span>
+                {" "}
+                <AiOutlineHeart size={25} />
+              </span>
+              <span>
+                {" "}
+                <RiChat3Line size={22} />
+              </span>
+              <span>
+                {" "}
+                <FaRegPaperPlane size={21} />
+              </span>
             </div>
             <div className="bookmark">
-              <BsBookmark />
+              <BiBookmark size={22} />
             </div>
           </div>
           <div className="desc">
             <div className="likes">
-              <span>10k likes</span>
+              <span>10k Likes</span>
             </div>
             <div className="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Molestias, veniam ipsum. Harum esse culpa repellendus repudiandae
-              nesciunt. Nam odit eligendi iste voluptate laboriosam delectus,
-              tenetur, commodi in quasi, quis possimus.
             </div>
             <div className="time">
               <span>18 HOURS AGO</span>
             </div>
           </div>
+          <div className="comment">
+            <div className="emoji">
+              <BsEmojiSmile size={25} />
+            </div>
+            <div className="comment-field">
+              <input type="text" placeholder="Add a comment..." />
+            </div>
+            <div className="post-btn">
+              <a href="#">Post</a>
+            </div>
+          </div>
         </div>
-        <div className="comment">comments</div>
       </div>
     </div>
   );

@@ -1,0 +1,41 @@
+/* NAVBAR STYLING */
+.top-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand img {
+    width: 100px;
+}
+
+.search input {
+    border: none;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    outline: none;
+}
+
+.icon-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.icon-links ul li {
+    margin-right: 10px;
+}
+
+.icon-links ul li img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .search {
+        display: none;
+    }
+}

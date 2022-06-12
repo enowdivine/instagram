@@ -1,0 +1,118 @@
+/* POST STYLING */
+.posts {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.posts .profile {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts .image img {
+    border-radius: 50%;
+    float: left;
+}
+
+.posts .image p {
+    margin: 8px 0 0 45px;
+    font-weight: bold;
+}
+
+.posts .content .post {
+    margin: 0;
+    padding: 0;
+}
+
+.posts .content .post img {
+    width: 100%;
+    margin-top: -24px;
+}
+
+.posts .actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.action span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.likes {
+    text-align: left;
+    padding: 0 0 00 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.description {
+    text-align: left;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+}
+
+.time {
+    text-align: left;
+    padding: 0 10px;
+    font-size: 11px;
+    color: grey;
+    margin: 10px 0;
+}
+
+.comment {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 10px 10px 10px;
+    border-top: 1px solid #ccc;
+}
+
+.emoji {
+    width: 10%;
+    float: left;
+}
+
+.comment-field input {
+    float: left;
+    width: 75%;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+.post-btn {
+    margin-top: 8px;
+}
+
+.comment a {
+    width: 15%;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .posts {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .posts {
+        width: 100%;
+    }
+
+    .comment-field input {
+        padding: 5px 5px;
+    }
+
+    .comment a {
+        padding: 5px 5px;
+    }
+}
