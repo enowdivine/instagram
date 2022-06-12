@@ -1,0 +1,65 @@
+/* HOMPAGE STYLING */
+.homepage-main {
+    background-color: whitesmoke;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* NAVBAR STYLING */
+.top-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand img {
+    width: 100px;
+}
+
+.search input {
+    border: none;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    outline: none;
+}
+
+.icon-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.icon-links ul li {
+    margin-right: 10px;
+}
+
+/* POST STYLING */
+.posts {
+    width: 400px;
+    margin: auto;
+}
+
+.posts .profile {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts .image img {
+    border-radius: 50%;
+    float: left;
+}
+
+.posts .image p {
+    margin: 8px 0 0 45px;
+    font-weight: bold;
+}
+
+.posts .content .post {
+    margin: 0;
+    padding: 0;
+}
+
+.posts .content .post img {
+    width: 100%;
+    margin-top: -24px;
+}

@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Error from "./pages/Error";
 import Password from "./pages/Password";
 import Signup from "./pages/Signup";
+import Homepage from "./pages/user/Homepage";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
 
         {/* FORGOT PASSWORD ROUTE */}
         <Route exact path="/forgotPassword" element={<Password />} />
+
+        {/* ACCOUNT HOMPAGE ROUTE */}
+        <Route exact path="/user" element={<Homepage />} />
 
         {/* 404 PAGE ROUTE */}
         <Route path="*" element={<Error />} />

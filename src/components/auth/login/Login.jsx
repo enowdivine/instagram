@@ -21,7 +21,9 @@ const Login = ({ signup }) => {
               <input type="password" placeholder="Password" />
             </div>
             <div className="login-btn">
-              <button>Log In</button>
+              <Link to="/user">
+                <button>Log In</button>
+              </Link>
             </div>
           </form>
           <div className="or">
