@@ -13,10 +13,12 @@
 .posts .image img {
     border-radius: 50%;
     float: left;
+    border: 2px solid rgb(238, 23, 91);
+    padding: 2px;
 }
 
 .posts .image p {
-    margin: 8px 0 0 45px;
+    margin: 8px 0 0 10px;
     font-weight: bold;
 }
 

@@ -8,7 +8,7 @@ import { BiBookmark } from "react-icons/bi";
 
 const Post = () => {
   return (
-    <div className="posts">
+    <div className="posts mb-2">
       <div className="card">
         <div className="profile">
           <div className="image">
