@@ -1,0 +1,28 @@
+.options ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.options ul li {
+    width: 100%;
+
+}
+
+.options ul li a {
+    font-size: 16px;
+    font-weight: normal;
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.options .report {
+    border-top: 0;
+    color: red;
+}
+
+.options .unfollow {
+    color: red;
+}

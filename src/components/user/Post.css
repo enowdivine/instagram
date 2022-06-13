@@ -22,6 +22,10 @@
     font-weight: bold;
 }
 
+.option:hover {
+    cursor: pointer;
+}
+
 .posts .content .post {
     margin: 0;
     padding: 0;
@@ -41,6 +45,21 @@
 .action span {
     margin-right: 10px;
     font-weight: bold;
+}
+
+.action span:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.action .like .liked {
+    color: red;
+    margin: 0;
+}
+
+.bookmark:hover {
+    color: grey;
+    cursor: pointer;
 }
 
 .likes {

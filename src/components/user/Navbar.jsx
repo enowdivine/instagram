@@ -34,9 +34,28 @@ const Navbar = () => {
               <li>
                 <AiOutlineHeart size={25} />
               </li>
-              <li>
-                <img src="/images/facebook-logo.png" alt="" />
+              <li
+                className=" dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  alt=""
+                />
               </li>
+              <div class="dropdown-menu dropdown-menu-right">
+                <button className="dropdown-item" type="button">
+                  Action
+                </button>
+                <button className="dropdown-item" type="button">
+                  Another action
+                </button>
+                <button className="dropdown-item" type="button">
+                  Something else here
+                </button>
+              </div>
             </ul>
           </div>
         </div>

@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Post.css";
 import { BsThreeDots, BsEmojiSmile } from "react-icons/bs";
-import { AiOutlineHeart } from "react-icons/ai";
-import { FaRegPaperPlane } from "react-icons/fa";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { FaRegPaperPlane, FaBookmark } from "react-icons/fa";
 import { RiChat3Line } from "react-icons/ri";
 import { BiBookmark } from "react-icons/bi";
+import Modal from "./Modal";
 
 const Post = () => {
+  const [like, setLike] = useState(false);
+  const [bookmark, setBookmark] = useState(false);
+  const [option, setOption] = useState(false);
+
   return (
     <div className="posts mb-2">
       <div className="card">
         <div className="profile">
           <div className="image">
-            <img src="/images/facebook-logo.png" alt="" />
+            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" />
             <p>facebook_username</p>
           </div>
           <div className="option">
-            <span>
+            <span onClick={() => setOption(true)}>
               <BsThreeDots />
             </span>
           </div>
@@ -27,9 +32,14 @@ const Post = () => {
           </div>
           <div className="actions">
             <div className="action">
-              <span>
-                {" "}
-                <AiOutlineHeart size={25} />
+              <span className="like">
+                {like ? (
+                  <span className="liked">
+                    <AiFillHeart size={25} onClick={() => setLike(false)} />
+                  </span>
+                ) : (
+                  <AiOutlineHeart size={25} onClick={() => setLike(true)} />
+                )}
               </span>
               <span>
                 {" "}
@@ -41,7 +51,11 @@ const Post = () => {
               </span>
             </div>
             <div className="bookmark">
-              <BiBookmark size={22} />
+              {bookmark ? (
+                <FaBookmark size={22} onClick={() => setBookmark(false)} />
+              ) : (
+                <BiBookmark size={22} onClick={() => setBookmark(true)} />
+              )}
             </div>
           </div>
           <div className="desc">
@@ -69,6 +83,7 @@ const Post = () => {
           </div>
         </div>
       </div>
+      <Modal show={option} onHide={() => setOption(false)} />
     </div>
   );
 };

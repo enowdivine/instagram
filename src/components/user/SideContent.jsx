@@ -8,7 +8,7 @@ const SideContent = () => {
     <div className="sidecontent">
       <div className="profile">
         <div className="image">
-          <img src="/images/facebook-logo.png" alt="" />
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" />
           <div className="name">
             <div className="username">username</div>
             <div className="actual-name">Enow Divine</div>
@@ -28,7 +28,10 @@ const SideContent = () => {
         {suggestions.map((_, index) => (
           <div key={index} className="profile mb-2">
             <div className="image">
-              <img src="/images/facebook-logo.png" alt="" />
+              <img
+                src="https://randomuser.me/api/portraits/men/13.jpg"
+                alt=""
+              />
               <div className="name">
                 <div className="username">username</div>
                 <div className="actual-name">Followed by other_user</div>
