@@ -4,8 +4,8 @@ import "./Status.css";
 const Status = () => {
   const [status] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   return (
-    <div>
-      <div className="card status-main">
+    <div className="status-main">
+      <div className="card ">
         <div className="card-body">
           <div className="all-status">
             {status.map((_, index) => (

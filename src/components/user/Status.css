@@ -35,3 +35,19 @@
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .status-main {
+        width: 61%;
+        margin: auto;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .status-main {
+        width: 100%;
+    }
+
+}
