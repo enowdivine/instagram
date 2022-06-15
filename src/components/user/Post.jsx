@@ -6,6 +6,7 @@ import { FaRegPaperPlane, FaBookmark } from "react-icons/fa";
 import { RiChat3Line } from "react-icons/ri";
 import { BiBookmark } from "react-icons/bi";
 import Modal from "./Modal";
+import { DropdownButton, Dropdown } from "react-bootstrap";
 
 const Post = () => {
   const [like, setLike] = useState(false);

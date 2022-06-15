@@ -36,16 +36,21 @@ const Navbar = () => {
               </li>
               <li
                 className=" dropdown-toggle"
+                id="dropdownMenuButton"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                type="button"
               >
                 <img
                   src="https://randomuser.me/api/portraits/men/12.jpg"
                   alt=""
                 />
               </li>
-              <div class="dropdown-menu dropdown-menu-right">
+              <div
+                className="dropdown-menu dropdown-menu-right"
+                aria-labelledby="dropdownMenuButton"
+              >
                 <button className="dropdown-item" type="button">
                   Action
                 </button>

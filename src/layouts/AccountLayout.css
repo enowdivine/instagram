@@ -1,0 +1,38 @@
+.layout-wrapper {
+    width: 1000px;
+    display: flex;
+    margin-top: 100px;
+}
+
+.children-wrapper {
+    width: 500px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 912px) {
+    .children-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .suggestions {
+        display: none;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .layout-wrapper {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .children-wrapper {
+        width: 100%;
+    }
+
+    .suggestions {
+        display: none;
+    }
+}

@@ -1,5 +1,6 @@
 .status-main {
-    width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .all-status {
@@ -37,17 +38,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-    .status-main {
-        width: 61%;
-        margin: auto;
-    }
-}
+@media only screen and (max-width: 768px) {}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .status-main {
-        width: 100%;
-    }
-
-}
+@media only screen and (max-width: 600px) {}

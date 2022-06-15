@@ -1,6 +1,6 @@
 /* POST STYLING */
 .posts {
-    width: 500px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -116,18 +116,11 @@
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-    .posts {
-        width: 60%;
-        margin: auto;
-    }
-}
+@media only screen and (max-width: 768px) {}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .posts {
-        width: 100%;
-    }
+
 
     .comment-field input {
         padding: 5px 5px;

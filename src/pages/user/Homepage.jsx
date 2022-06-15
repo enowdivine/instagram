@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../../components/user/Navbar";
 import Post from "../../components/user/Post";
-import SideContent from "../../components/user/SideContent";
 import Status from "../../components/user/Status";
+import AccountLayout from "../../layouts/AccountLayout";
 import "./User.css";
 
 const Homapage = () => {
@@ -12,21 +12,14 @@ const Homapage = () => {
       <div className="navigation">
         <Navbar />
       </div>
-      <div className="main-content container">
-        <div className="group">
-          <div className="all-posts">
-            <div className="status mb-2">
-              <Status />
-            </div>
-            {posts.map((_, index) => (
-              <Post key={index} />
-            ))}
-          </div>
-          <div className="sidecontent">
-            <SideContent />
-          </div>
+      <AccountLayout>
+        <Status />
+        <div>
+          {posts.map((_, index) => (
+            <Post key={index} />
+          ))}
         </div>
-      </div>
+      </AccountLayout>
     </div>
   );
 };
